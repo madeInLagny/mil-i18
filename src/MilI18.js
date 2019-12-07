@@ -66,9 +66,7 @@ export class MilI18 extends LitElement {
           new CustomEvent('translatedKeys', {
             bubbles: true,
             composed: true,
-            detail: {
-              translatedKeys: data,
-            },
+            detail: data,
           }),
         );
       });

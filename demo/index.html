@@ -19,7 +19,7 @@
 
     render(
       html`
-        <mil-i18 namespace="app" forcedLanguage="en" @translatedKeys="${(e) => { console.log(e) }}"></mil-i18>
+        <mil-i18 namespace="app" forcedLanguage="en" @translatedKeys="${(e) => { console.log(e.data) }}"></mil-i18>
       `,
       document.querySelector('#demo')
     );
