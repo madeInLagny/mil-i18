@@ -22,7 +22,7 @@ npm i mil-i18 --save
   import { ifDefined } from 'lit-html/directives/if-defined';
 </script>
 
-<mil-i18 namespace="app" @translatedKeys="${(e)=>(this._i18=e.data}"></mil-i18>
+<mil-i18 namespace="app" @translatedKeys="${(e)=>{this._i18=e.data}}"></mil-i18>
 
 <p>${ifDefined(this._i18.key1)}</p>
 ```
