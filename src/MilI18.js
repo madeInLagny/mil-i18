@@ -11,6 +11,7 @@ export class MilI18 extends LitElement {
       namespace: { type: String },
       path: { type: String },
       fileData: { type: Object },
+      _i18:{type: Object}
     };
   }
 
@@ -21,6 +22,7 @@ export class MilI18 extends LitElement {
     this.forcedLanguage = '';
     this.namespace = 'namespaceValue';
     this.path = './assets/locales/';
+    this._i18={}
   }
 
   render() {
